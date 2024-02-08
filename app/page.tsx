@@ -18,6 +18,11 @@ export default function Home() {
         </ServerComponent>
       </BgColourProvider>
       <p className={`absolute bottom-1 left-2 text-white ${inconsolata.className}`}>Server Component</p>
+      <div className="absolute bottom-1 left-1/2 -translate-x-1/2 text-center text-sm">
+        <p>View the source code <a href="https://github.com/ollie-cook/react-context-example" target="_blank" className="underline">here</a></p>
+        <p>I used the <a href="https://react.dev/reference/react/createContext" target="_blank" className="underline">docs</a> and <a href="https://www.pronextjs.dev/tutorials/state-management" target="_blank" className="underline">this</a> tutorial by Jack Herrington.</p>
+      </div>  
+      
     </main>
   );
 }
