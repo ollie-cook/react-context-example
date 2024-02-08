@@ -7,9 +7,9 @@ import { inconsolata }  from './fonts'
 export default function Home() {
   return ( 
     <main className="relative min-h-screen flex flex-col items-center justify-center bg-zinc-400">
-      <div className="absolute top-4 w-[50rem]">
-        <h1 className="text-6xl font-bold text-center">React Context Example</h1>
-        <p className={`text-center mt-2 ${inconsolata.className}`}>I used React Context to create this very simple example. It renders two client components from within a server component, and uses React Context to give both client components access to a shared state, i.e. the background colour.</p>
+      <div className="absolute top-4 w-11/12 lg:w-[50rem]">
+        <h1 className="text-3xl md:text-6xl font-bold text-center">React Context Example</h1>
+        <p className={`text-center mt-2 ${inconsolata.className}`}>I used React Context and Next.js to create this very simple example. It renders two client components from within a server component, and uses React Context to give both client components access to a shared state, i.e. the background colour.</p>
       </div>
       <BgColourProvider>
         <ServerComponent>
@@ -17,12 +17,10 @@ export default function Home() {
           <Output />
         </ServerComponent>
       </BgColourProvider>
-      <p className={`absolute bottom-1 left-2 text-white ${inconsolata.className}`}>Server Component</p>
-      <div className="absolute bottom-1 left-1/2 -translate-x-1/2 text-center text-sm">
-        <p>View the source code <a href="https://github.com/ollie-cook/react-context-example" target="_blank" className="underline">here</a></p>
+      <div className="absolute bottom-12 sm:left-1/2 md:bottom-1 sm:-translate-x-1/2 text-center text-sm">
+        <p>View the source code <a href="https://github.com/ollie-cook/react-context-example" target="_blank" className="underline">here</a>.</p>
         <p>I used the <a href="https://react.dev/reference/react/createContext" target="_blank" className="underline">docs</a> and <a href="https://www.pronextjs.dev/tutorials/state-management" target="_blank" className="underline">this</a> tutorial by Jack Herrington.</p>
       </div>  
-      
     </main>
   );
 }
